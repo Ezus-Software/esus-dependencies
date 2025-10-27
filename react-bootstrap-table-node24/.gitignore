@@ -1,0 +1,13 @@
+node_modules
+.DS_Store
+*~
+*.sublime-project
+*.sublime-workspace
+*.idea
+*.iml
+lib/
+npm-debug.log
+.vscode
+*.tgz
+node_modules_*
+old

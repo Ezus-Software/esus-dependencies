@@ -1,0 +1,55 @@
+{
+  "name": "@ezus-software/react-bootstrap-table-node24",
+  "version": "1.0.0",
+  "description": "It's a react table for bootstrap",
+  "main": "./lib/index.js",
+  "scripts": {
+    "clean": "node -e \"require('fs').rmSync('lib', { recursive: true, force: true })\"",
+    "build": "npm run clean && babel src --out-dir lib --extensions .js,.jsx"
+  },
+  "keywords": [
+    "react",
+    "bootstrap",
+    "table",
+    "grid",
+    "react-component"
+  ],
+  "files": [
+    "README.md",
+    "lib/",
+    "dist/",
+    "css/"
+  ],
+  "tags": [
+    "react"
+  ],
+  "author": "AllenFang",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.25.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-react": "^7.34.1",
+    "jest": "^29.7.0",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "classnames": "^2.1.2",
+    "prop-types": "^15.5.10",
+    "react-modal": "^3.1.7"
+  },
+  "peerDependencies": {
+    "bootstrap": ">=3 <6",
+    "react": ">=16 <19",
+    "react-dom": ">=16 <19"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  }
+}
