@@ -1,3 +1,21 @@
+# Esus Software part 
+
+Commands to execute : 
+
+`npm install --save-dev @babel/core @babel/cli @babel/preset-env`
+
+`npm run build`
+
+`npm pack`
+
+Add an archive release to the package.json : 
+
+```
+"dependencies": {
+	"@esus/react-bootstrap-table-node24": "https://github.com/Ezus-Software/esus-dependencies/releases/download/esus-dependencies/ezus-software-react-bootstrap-table-node24-1.0.0.tgz",
+}
+```
+
 # react-bootstrap-table
 
 ## [`react-bootstrap-table2`](https://github.com/react-bootstrap-table/react-bootstrap-table2) already released, this project will stop development after 2018Q2
